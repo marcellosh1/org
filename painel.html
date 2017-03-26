@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="estilo.css">
+
+<script src="ckeditor/ckeditor.js"></script>
+
+
+
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left w3-center" style="display:none" id="mySidebar">
+  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+  <button class="w3-bar-item w3-button" onClick="w3_close()">Close <i class="fa fa-remove"></i></button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onClick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+  <div class="w3-center">
+  <h4>Organiza&ccedil;&atilde;o e planejamentos</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">Painel Nano Sistecck</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-theme-dark w3-hover-teal" onClick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Criar algo novo</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal" >
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme" style="width:100%;"> 
+        <span onClick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright"><i style="font-size:24px" class="fa w3-text-theme">&#xf00d;</i></span>
+       <h1>Criando T&oacute;pico</h1>
+      </header>
+      <div class="w3-padding">
+	  
+	  
+	<style> 
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+</style>	  
+			<form>
+			<div class="form-group">
+  <label for="usr">Titulo Para o T&oacute;pico:</label>
+  <input type="text" class="form-control"  placeholder="Titulo Para o T&oacute;pico:" name="titulo" id="usr">
+</div>
+
+<div onload="myFunction()">
+<table border="1px" width="100%;">
+<tr>
+<td>
+<input type="file"  class="w3-btn w3-theme esconder_lugar" placeholder="Escolha a pasta categoria"   id="myFile" multiple size="50" onChange="myFunction()">
+<p id="demo"></p>
+</td>
+
+<td>
+<input list="Pastas" class="form-control" style="float:right; position:relative;" name="pastas">
+  <datalist id="Pastas">
+    <option   value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</td>
+
+</tr>
+</table>
+
+<script src="ckeditor/input_File.js"></script>
+</div>
+			
+<textarea name="editor1" id="editor1" rows="10" cols="80">
+            </textarea>
+			<br>
+			
+			<input type="submit" class="w3-btn w3-theme" value="Enviar" name="enviar">
+			
+			
+			
+			
+			
+			</form>
+			
+			<script>
+CKEDITOR.replace( 'editor1', {
+    language: 'pt-br',
+    uiColor: '#009688'
+});
+//uiColor: '#9AB8F3'
+            </script>
+
+	  
+	  
+	  
+      </div>
+      <footer class="w3-container w3-theme">
+        <p>Painel Nano Sistecck</p>
+      </footer>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <h3>Responsive</h3><br>
+  <i style="font-size:120px" class="fa w3-text-theme  w3-margin-bottom ">&#xf2ba;</i>
+  <p>Built-in responsiveness</p>
+  <p>Mobile first fluid grid</p>
+  <p>Fits any screen sizes</p>
+  <p>PC Tablet and Mobile</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <h3>Standard CSS</h3><br>
+  <i style="font-size:120px" class="fa w3-text-theme  w3-margin-bottom ">&#xf2ba;</i>
+  <p>Standard CSS only</p>
+  <p>Easy to learn</p>
+  <p>No need for jQuery</p>
+  <p>No JavaScript library</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-container" style="min-height:460px">
+  <h3>Design</h3><br>
+  <i style="font-size:120px" class="fa w3-text-theme  w3-margin-bottom ">&#xf2ba;</i>
+  <p>Paper like design</p>
+  <p>Bold colors and shadows</p>
+  <p>Equal across platforms</p>
+  <p>Equal across devices</p>
+  </div>
+</div>
+</div>
+
+
+
+
+<hr>
+<div class="w3-center">
+  <h2>Pagina&ccedil;&atilde;o</h2>
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme"><i style="font-size:24px" class="fa">&#xf100;</i></a>
+      <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme"><i style="font-size:24px" class="fa">&#xf101;</i></a>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark">
+  <h3>Footer</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme w3-padding">Ir para o topo</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme" target="_blank">W3.CSS Reference</a></p>
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-theme-dark", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-theme-dark";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
