@@ -1,0 +1,63 @@
+
+	body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('../img/lectura-biblia-4.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.esconder_lugar{  border: 2px solid #009688;
+    border-radius: 5px; 
+	opacity: 0.80;
+    filter: alpha(opacity=80); /* For IE8 and earlier */}
+	
+	
+	
+	/***************************************login  user**********************************/
+	
+	input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: ;
+    padding: 20px;
+}
+
+
+
+
